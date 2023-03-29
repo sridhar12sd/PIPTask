@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: TodoApi-pod
+spec:
+   containers:
+   - name: TodoApi-container01
+     image: sridhar4sd/TodoApi:latest
+     ports:
+     - containerPort: 6379
