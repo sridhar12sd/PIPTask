@@ -1,7 +1,0 @@
-FROM ubuntu
-
-RUN dnf install dotnet-sdk-6.0 -y && dnf clean all RUN yum install -y sudo && yum clean all
-COPY TodoApi /tmp/TodoApi
-RUN sudo update-ca-trust enable; sudo update-ca-trust extract COPY . /opt
-
-ENTRYPOINT ["dotnet", "TodoApi"]
